@@ -44,7 +44,7 @@
                         <div class="text-group">
                             <input type="text" id="item-name" name="nama_barang" required placeholder="Nama Barang" >
                             <input type="text" id="lokasi-name" name="lokasi" required placeholder="Lokasi Temuan" >
-                            <input type="tel" id="whatsapp-number" name="phone" required placeholder="No WA" >
+                            <input type="tel" id="whatsapp-number" name="phone" required placeholder="No WA (format: 62xxx)" >
                             <input type="hidden" name="user_id" value="{{$id}}">
                         </div>
                     </div>

@@ -39,16 +39,16 @@
                     <div class="form-row">  
                         <div class="form-group">
                             <img id="image-preview" src="{{url('temuan/'.$barang->foto_barang)}}" alt="Image Preview" style="display: none; width: 200px; height: auto;">
-                            <input type="file" id="item-photo" name="foto_barang" accept="image/*" @if ($id!=$barang->user_id) disabled @endif>
+                            <input type="file" id="item-photo" name="foto_barang" accept="image/*" @if ($id!=$barang->user_id)  @endif>
                         </div>
                         <div class="text-group">
-                            <input type="text" id="item-name" name="nama_barang" required placeholder="Nama Barang" value="{{$barang->nama_barang}}" @if ($id!=$barang->user_id) disabled @endif>
-                            <input type="text" id="lokasi-name" name="lokasi" required placeholder="Lokasi Temuan" value="{{$barang->lokasi}}" @if ($id!=$barang->user_id) disabled @endif>
-                            <input type="tel" id="whatsapp-number" name="phone" required placeholder="No WA" value="{{$barang->phone}}" @if ($id!=$barang->user_id) disabled @endif>
+                            <input type="text" id="item-name" name="nama_barang" required placeholder="Nama Barang" value="{{$barang->nama_barang}}" @if ($id!=$barang->user_id)  @endif>
+                            <input type="text" id="lokasi-name" name="lokasi" required placeholder="Lokasi Temuan" value="{{$barang->lokasi}}" @if ($id!=$barang->user_id)  @endif>
+                            <input type="tel" id="whatsapp-number" name="phone" required placeholder="No WA" value="{{$barang->phone}}" @if ($id!=$barang->user_id)  @endif>
                         </div>
                     </div>
                     <div class="wide-group">
-                        <textarea id="item-details" name="deskripsi" rows="4" required placeholder="Deskripsi Barang Temuan" @if ($id!=$barang->user_id) disabled @endif>{{$barang->deskripsi}}</textarea>
+                        <textarea id="item-details" name="deskripsi" rows="4" required placeholder="Deskripsi Barang Temuan" @if ($id!=$barang->user_id)  @endif>{{$barang->deskripsi}}</textarea>
                     </div>
                     <button type="submit" class="submit-button" @if ($id!=$barang->user_id) disabled @endif>Edit</button>
                 </form>
