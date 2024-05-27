@@ -43,7 +43,7 @@
                         </div>
                         <div class="text-group">
                             <input type="text" id="item-name" name="nama_barang" required placeholder="Nama Barang" value="{{$barang->nama_barang}}" @if ($id!=$barang->user_id)  @endif>
-                            <input type="text" id="lokasi-name" name="lokasi" required placeholder="Lokasi Temuan" value="{{$barang->lokasi}}" @if ($id!=$barang->user_id)  @endif>
+                            <input type="text" id="lokasi-name" name="lokasi" required placeholder="Lokasi Hilang" value="{{$barang->lokasi}}" @if ($id!=$barang->user_id)  @endif>
                             <input type="tel" id="whatsapp-number" name="phone" required placeholder="No WA" value="{{$barang->phone}}" @if ($id!=$barang->user_id)  @endif>
                         </div>
                     </div>

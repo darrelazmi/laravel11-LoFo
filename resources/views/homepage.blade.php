@@ -31,10 +31,10 @@
         </div>
         <div class="header-right">
             <div class="info-temuan">
-                <h1>Temuan Barang</h1>
+                <h1>Temuan Barang: {{$count1}}</h1>
             </div>
             <div class="info-hilang">
-                <h1>Laporan Kehilangan</h1>
+                <h1>Laporan Kehilangan: {{$count2}}</h1>
             </div>
         </div>
         <div class="header">

@@ -29,14 +29,14 @@
         </div>
         <div class="header-right">
             <div class="info-temuan">
-                <h1>Temuan Barang</h1>
+                <h1>Temuan Barang: {{$count1}}</h1>
             </div>
             <div class="info-hilang">
-                <h1>Laporan Kehilangan</h1>
+                <h1>Laporan Kehilangan: {{$count1}}</h1>
             </div>
         </div>
         <div class="header">
-            <h2>List Temuan Barang</h2>
+            <h2>List Laporan</h2>
             <form action="{{route('hilang.add')}}" method="get">
                 <button type="submit" class="tambah-button">Tambah</button>
             </form>

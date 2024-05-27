@@ -14,7 +14,9 @@ class BarangController extends Controller
     public function home()
     {
         $laporan = barang_temuan::all();
-        return view('homepage', ['laporan_hilang' => $laporan, 'id' => Auth::id()]);
+        $hitung = barang_temuan::count();
+        $hitung2 = barang_hilang::count();
+        return view('homepage', ['laporan_hilang' => $laporan, 'id' => Auth::id(), 'count1' => $hitung, 'count2' => $hitung2]);
     }
 
     
@@ -85,7 +87,9 @@ class BarangController extends Controller
     public function hilang()
     {
         $laporan = barang_hilang::all();
-        return view('laporankehilangan', ['laporan_hilang' => $laporan, 'id' => Auth::id()]);
+        $hitung = barang_temuan::count();
+        $hitung2 = barang_hilang::count();
+        return view('laporankehilangan', ['laporan_hilang' => $laporan, 'id' => Auth::id(), 'count1' => $hitung, 'count2' => $hitung2]);
     }
     
     public function hiadd()
