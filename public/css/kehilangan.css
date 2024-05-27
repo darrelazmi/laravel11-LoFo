@@ -1,0 +1,240 @@
+body {
+    width: 1728px;
+    height: 1117px;
+    position: fixed;
+    background: #ECECEC;
+}
+
+.sidebar {
+    width: 398px;
+    height: 915px;
+    top: 25px;
+    left: 25px;
+    position: absolute;
+    background: #3D547E;
+    border-radius: 20px;
+}
+
+.title {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.search-box {
+    left: 50%;
+    top: 180px;
+    width: 321px;
+    height: 70px;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    text-align: center;
+}
+
+.search-box h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.search-box a{
+    color: white;
+    text-decoration: none;
+}
+
+.search-box a:hover{
+    color: #000;
+}
+
+.search-box:hover {
+    background-color: white;
+    border-color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.hilang-box {
+    left: 50%;
+    top: 290px;
+    width: 321px;
+    height: 70px;
+    position: absolute;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+}
+
+.hilang-box h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+}
+
+.logout-button {
+    left: 50%;
+    top: 780px;
+    width: 321px;
+    height: 80px;
+    border: none;
+    border-radius: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.logout-button:hover {
+    background-color: #EC3C3C;
+    color: white;
+    border-color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.hapus-akun{
+    left: 50%;
+    top: 710px;
+    width: 280px;
+    height: 50px;
+    border: none;
+    border-radius: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.hapus-akun:hover{
+    background-color: #EB5C2F;
+    color: white;
+    border-color: #888;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 900px;
+    margin-top: 25px;
+    text-align: center;
+    position: relative;
+    left: 160px;
+}
+
+.info-temuan,
+.info-hilang {
+    width: 45%;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+.info-temuan {
+    background-color: #78EC1D;
+}
+
+.info-hilang {
+    background-color: #EB5C2F;
+}
+
+.info-temuan h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.info-hilang h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    justify-content: center;
+}
+
+.header {
+    left: 50%;
+    top: 50px;
+    width: 1400px;
+    height: 780px;
+    background: white;
+    border-radius: 20px;
+    position: relative;
+    margin-left: 325px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.header h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.header .tambah-button {
+    width: 200px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #3D547E;
+    margin-top: 25px;
+    margin-left: 890px;
+    color: white;
+}
+
+.table-header {
+    display: contents;
+    font-weight: bold;
+    background-color: #3D547E;
+    padding: 10px;
+    width: 90%;
+    height: 10px;
+    border-bottom: 2px solid #ddd;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-data {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 90%;
+    height: 550px;
+    margin: 0 auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+.table-row {
+    display: contents;
+}
+
+.table-row {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.table-row img {
+    display: block;
+    margin: 0 auto;
+}
+
+.table-row a {
+    display: block;
+    text-align: center;
+}
